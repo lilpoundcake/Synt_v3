@@ -46,6 +46,8 @@ Install virtual environment with conda/micromamba
 
 `conda activate Synt_v3`
 
+# Usage
+
 For showing help enter:
 
 `python init.py -h`
