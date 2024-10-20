@@ -16,6 +16,7 @@ parser.add_argument('--expression_system', '-e', default='cho', choices=['cho', 
 parser.add_argument('--sequence_type', '-p', default='protein', choices=['protein', 'nucleotide'], help='Select type of input sequence')
 
 # i'll add key for nogaps mode
+# and codon usage distribution analysis tool
 
 parser.add_argument('--codon_usage_threshold', '-u', default=20, type=float)
 parser.add_argument('--tbio', default=True) 
