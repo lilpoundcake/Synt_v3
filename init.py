@@ -61,7 +61,7 @@ else:
 os.mkdir(project_name)
 
 def print_head(input_file, project_name, reaction_temp, primer_lenght, expression_system, codon_usage_threshold):
-    print(f'melting low {reaction_temp}\nlength low {primer_lenght} high 60\ntbio', file=input_file)
+    print(f'melting low {reaction_temp}\nlength low {primer_lenght}\ntbio', file=input_file)
     print(f'frequency threshold {codon_usage_threshold}', file=input_file)
     print(f'logfile {project_name}_{i}.txt\n', file=input_file)
 
