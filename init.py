@@ -128,9 +128,7 @@ for logfile_num, _ in enumerate(fragment_list):
 
 df1 = pd.DataFrame(primers_dict)
 
-df2 = df1.reset_index().rename(columns={
-    'index' : 'primer_name'
-}).melt(
+df2 = df1.reset_index().rename(columns={'index' : 'primer_name'}).melt(
     id_vars=['primer_name'], var_name='fragment', value_name='primer_seq'
     ).dropna(ignore_index=True)
 
