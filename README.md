@@ -2,6 +2,8 @@
 
 Modified pipeline for DNAWorks tool.
 
+## MacOS
+
 First of all you need install xcode for macOS 
 
 `xcode-select --install`
@@ -28,7 +30,18 @@ Go back to folder
 
 `cd ..`
 
-Install virtual environment with comda/micromamba
+## Linux
+
+Install Gfortran:
+
+`apt-get install gfortran`
+
+
+## Conda environment
+
+If you steel don't have [Miniconda] (https://docs.anaconda.com/miniconda/) or [Micromamba] (https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) -- The time has come. Go to site and find appropriate information
+
+Install virtual environment with conda/micromamba
 
 `conda env create -f env.yml`
 
