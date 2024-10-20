@@ -98,7 +98,7 @@ Tool supports several parameters:
 - **-p** - *protein* or *nucleotide*. Default sequence type is *protein*
 - **-e** - expression system. You may select one from list: *cho*, *ecoli*, *sf9*, *human*. Default is *cho*
 - **-t** - preferable anneling temperature for PCR. Default temperature is 65 degrees Celsius.
-- **-l** - by default primers will be designed with length less than 50 nt. You can choose another. Optimal value is between 50 and 70 nt.
+- **-l** - by default primers will be designed with length less than 50 nt. You can choose another. Optimal value is between 50 and 60 nt. Integrated in the code module *primer3* is not able to calculate thermadynamical properties for oligos longer then 60 nt.
 
 ---
 
