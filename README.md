@@ -2,13 +2,23 @@
 
 Modified pipeline for DNAWorks tool.
 
+# Installation
+
+Clone this repo:
+
+`git clone https://github.com/lilpoundcake/Synt_v3.git`
+
+Go to the folder:
+
+`cd Synt_v3`
+
 ## MacOS
 
-First of all you need install xcode for macOS 
+First of all you need install **xcode** for macOS 
 
 `xcode-select --install`
 
-After that clone repo with DNAWorks
+After that clone a repo with DNAWorks
 
 `git clone https://github.com/davidhoover/DNAWorks.git`
 
@@ -16,17 +26,19 @@ Go to the directory with DNAWorks
 
 `cd DNAWorks`
 
+Compile:
+
 `make`
 
-If you receve an error when code is compiling use command 
+If you receve an error when code is compiling use command:
 
 `export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"`
 
-and try again:
+and try to compile again:
 
 `make`
 
-Go back to folder
+Go back to upper level folder:
 
 `cd ..`
 
@@ -35,6 +47,22 @@ Go back to folder
 Install Gfortran:
 
 `apt-get install gfortran`
+
+After that clone a repo with DNAWorks
+
+`git clone https://github.com/davidhoover/DNAWorks.git`
+
+Go to the directory with DNAWorks
+
+`cd DNAWorks`
+
+Compile:
+
+`make`
+
+Go back to upper level folder:
+
+`cd ..`
 
 ## Conda environment
 
