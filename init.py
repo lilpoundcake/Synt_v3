@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--name', '-n', default='synt_gene', help='Enter your project name')
 parser.add_argument('--temp', '-t', type=int, default=65, help='Enter preferable temperature of annealing in PCR')
-parser.add_argument('--primer_lenght', '-l', type=int, default=50, help='Select oligos length. Optimal length is 50-70 nt')
+parser.add_argument('--primer_lenght', '-l', type=int, default=50, help='Select oligos length. Optimal length is 50-60 nt')
 parser.add_argument('--expression_system', '-e', default='cho', choices=['cho', 'ecoli', 'sf9', 'human'], help='Select expression system')
 parser.add_argument('--sequence_type', '-p', default='protein', choices=['protein', 'nucleotide'], help='Select type of input sequence')
 
@@ -61,7 +61,7 @@ else:
 os.mkdir(project_name)
 
 def print_head(input_file, project_name, reaction_temp, primer_lenght, expression_system, codon_usage_threshold):
-    print(f'melting low {reaction_temp}\nlength low {primer_lenght}\ntbio', file=input_file)
+    print(f'melting low {reaction_temp}\nlength low {primer_lenght} high 60\ntbio', file=input_file)
     print(f'frequency threshold {codon_usage_threshold}', file=input_file)
     print(f'logfile {project_name}_{i}.txt\n', file=input_file)
 
