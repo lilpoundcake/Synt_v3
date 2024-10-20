@@ -13,13 +13,15 @@ After that clone repo with DNAWorks
 Go to the directory with DNAWorks
 
 `cd DNAWorks`
+
 `make`
 
 If you receve an error when code is compiling use command 
 
 `export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"`
 
-and try again 
+and try again:
+
 `make`
 
 Go back to folder
@@ -29,9 +31,13 @@ Go back to folder
 Install virtual environment with comda/micromamba
 
 `conda env create -f env.yml`
+
 `conda activate Synt_v3`
+
+Let's try to design oligos:
 
 `python init.py -n My_Test_Project MAQLGKLLKEQKYDRQLRLWGDHGQEALESAHVCLINATATGTEILKNLVLPGIGSFTIIDGNQVSGEDAGNNFFLQRSSIGKNRAEAAMEFLQELNSDVSGSFVEESPENLLDNDPSFFCRFTVVVATQLPESTSLRLAD`
 
 You'll get new folder with your project name.
+
 Folder contains files with generated sequences, primers lists, plots with heterodimer Tm, GC-content and so on.
