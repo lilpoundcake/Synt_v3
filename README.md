@@ -18,6 +18,8 @@ First of all you need install **xcode** for macOS
 
 `xcode-select --install`
 
+You'll see a panel that asks you to install Xcode Command Line Tools. Click *install*. You'll see a confirmation message when installation is complete.
+
 After that clone a repo with DNAWorks
 
 `git clone https://github.com/davidhoover/DNAWorks.git`
