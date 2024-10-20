@@ -32,7 +32,14 @@ Compile:
 
 `make`
 
-If you receve an error when code is compiling use command:
+If you receve an error 
+
+> ld: warning: ignoring duplicate libraries: '-lemutls_w', '-lgcc'
+> ld: library 'System' not found
+> collect2: error: ld returned 1 exit status
+> make: *** [dnaworks] Error 1
+
+when code is compiling use command:
 
 `export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"`
 
