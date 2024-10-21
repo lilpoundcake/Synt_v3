@@ -108,12 +108,12 @@ for logfile_num, _ in enumerate(fragment_list):
                 line = log_file.readline()
                 with open(f'{project_name}/{project_name}_{logfile_num}_primers.fa', 'w') as primers_fasta:
                     while " \n" != line:
-                        primer_num += 1
                         primer_name = f'{project_name}_{primer_num}'
                         primer_seq = f'{line.split()[1]}'
                         primer_dict[primer_name] = primer_seq
                         print(f'>{primer_name}\n{primer_seq}', file=primers_fasta)
                         line = log_file.readline()
+                        primer_num += 1
                 primers_dict[logfile_num] = primer_dict
                 primer_dict = {}
 
