@@ -32,7 +32,7 @@ Compile:
 
 `make`
 
-If you receve an error 
+If you receve an error when code is compiling 
 
 > ld: warning: ignoring duplicate libraries: '-lemutls_w', '-lgcc'
 > 
@@ -42,7 +42,7 @@ If you receve an error
 > 
 > make: *** [dnaworks] Error 1
 
-when code is compiling use command:
+use command:
 
 `export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"`
 
@@ -78,9 +78,9 @@ Go back to upper level folder:
 
 ## Conda environment
 
-If you steel don't have [Miniconda](https://docs.anaconda.com/miniconda/) or [Micromamba](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) - The time has come. Go to site and find appropriate information.
+If you still don't have [Miniconda](https://docs.anaconda.com/miniconda/) or [Micromamba](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) - The time has come. Go to site and find appropriate information.
 
-Install virtual environment with conda/micromamba
+Install virtual environment with conda/micromamba:
 
 `conda env create -f env.yml`
 
