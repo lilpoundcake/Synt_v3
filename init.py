@@ -68,6 +68,7 @@ def print_head(input_file, project_name, reaction_temp, primer_lenght, expressio
 
     if expression_system == 'cho' or expression_system == 'sf9':
         with open(f'codon_usage_tables/{expression_system}.txt', 'r') as codon_usage_table:
+            print('codon', file=input_file)
             for line in codon_usage_table:
                 print(f'{line.strip()}', file=input_file)
     elif expression_system == 'ecoli':
@@ -77,7 +78,7 @@ def print_head(input_file, project_name, reaction_temp, primer_lenght, expressio
 
 
 for i, fragment in enumerate(fragment_list):
-    with open(f'{project_name}/{project_name}_{i}.inp', 'w') as input_file:
+    with open(f'{project_name}/DNAWorks_{i}.inp', 'w') as input_file:
         print_head(input_file, project_name, reaction_temp, primer_lenght, 
                    expression_system, codon_usage_threshold)
 
@@ -87,7 +88,7 @@ for i, fragment in enumerate(fragment_list):
         print('//\n', file=input_file)
 
 for i, _ in enumerate(fragment_list):
-    os.system(f'./DNAWorks/dnaworks {project_name}/{project_name}_{i}.inp')
+    os.system(f'./DNAWorks/dnaworks {project_name}/DNAWorks_{i}.inp')
 
 os.system(f'mv {project_name}_* {project_name}')
 
